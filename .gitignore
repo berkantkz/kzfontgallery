@@ -1,0 +1,3 @@
+_site/*
+tools/*
+Gemfile.lock

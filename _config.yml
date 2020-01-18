@@ -1,0 +1,12 @@
+# Site settings
+name: kz font gallery for emui
+title: kz
+description: "kz font gallery for emui"
+baseurl: ""
+author: berkantkz
+repository: berkantkz/kzfontgallery
+exclude: ["tools"]
+
+# Build settings
+markdown: kramdown
+permalinks: pretty
