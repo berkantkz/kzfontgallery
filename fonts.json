@@ -1,17 +1,17 @@
 ---
 layout: null
 ---
-[{% for font in site.static_files %}{% if font.path contains 'fonts' %}
+[{% for font in site.static_files %}{% if font.path contains 'items' %}
   { {% assign pure = font.basename | split: '-' %}
     "name": "{{ pure[0] | replace: '_' , ' ' }}",
     "category" : "{{ pure[1] }}",
     "file" : {
-	    "date" : "{{ font.modified_time | date: '%e/%m/%Y' }}",
-		"date_long" : "{{ font.modified_time | date_to_long_string }}",
-		"day" : "{{ font.modified_time | date: '%a' }}",
-		"day_long" : "{{ font.modified_time | date: '%A' }}",
-		"hour" : "{{ font.modified_time | date: '%I:%M%P' }}"
-	},
-	"url": "{{ site.url }}{{ font.path }}"
-  }{% unless forloop.last == true %},{% endunless %}
+        "date" : "{{ font.modified_time | date: '%e/%m/%Y' }}",
+        "date_long" : "{{ font.modified_time | date_to_long_string }}",
+        "day" : "{{ font.modified_time | date: '%a' }}",
+        "day_long" : "{{ font.modified_time | date: '%A' }}",
+        "hour" : "{{ font.modified_time | date: '%I:%M%P' }}"
+    },
+    "url": "{{ site.url }}{{ font.path }}"
+  }{% if forloop.last == false %},{% endif %}
 {% endif %}{% endfor %}]
