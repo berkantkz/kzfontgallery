@@ -12,6 +12,8 @@ layout: null
         "day_long" : "{{ font.modified_time | date: '%A' }}",
         "hour" : "{{ font.modified_time | date: '%I:%M%P' }}"
     },
+	"preview": "{{ pure[0] }}-preview.jpg",
+	"thumbnail": "{{ pure[0] }}-thumbnail.jpg",
     "url": "{{ site.url }}{{ font.path }}"
   }{% if forloop.last == false %},{% endif %}
 {% endif %}{% endfor %}]
