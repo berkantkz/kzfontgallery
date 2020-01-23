@@ -1,7 +1,7 @@
 # Site settings
-name: kz font gallery for emui
-title: kz
-description: "kz font gallery for emui"
+name: kz font gallery
+title: kz Font Gallery
+description: "Font Gallery for EMUI by berkantkz"
 baseurl: ""
 author: berkantkz
 repository: berkantkz/kzfontgallery
