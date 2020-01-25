@@ -7,5 +7,6 @@ permalink: /
 
 ## Currently available fonts
 {% for font in fontsAvailable %}
-* {{font.name | replace: '.hwt', ''}}
+{% assign name = font.basename | replace: '_', ' ' |split: '-' %}
+* {{name[0]}}
 {% endfor %}
