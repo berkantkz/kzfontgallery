@@ -12,8 +12,10 @@ layout: null
         "day_long" : "{{ font.modified_time | date: '%A' }}",
         "hour" : "{{ font.modified_time | date: '%I:%M%P' }}"
     },
-	"preview": "{{ pure[0] }}-preview.jpg",
-	"thumbnail": "{{ pure[0] }}-thumbnail.jpg",
+	"preview_light": "{{ pure[0] }}-preview_light.png",
+	"preview_dark": "{{ pure[0] }}-preview_dark.png",
+	"thumbnail_light": "{{ pure[0] }}-thumbnail_light.png",
+	"thumbnail_dark": "{{ pure[0] }}-thumbnail_dark.png",
     "url": "{{ site.url }}{{ font.path }}"
   }{% if forloop.last == false %},{% endif %}
 {% endfor %}]
