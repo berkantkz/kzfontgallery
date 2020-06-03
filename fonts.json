@@ -17,6 +17,6 @@ layout: null
 	"thumbnail_light": "{{ pure[0] }}-thumbnail_light.png",
 	"thumbnail_dark": "{{ pure[0] }}-thumbnail_dark.png",
 	"size": "{{ pure[2] }}",
-    "url": "{{ site.url }}kzFontGallery/{{ font.path }}"
+    "url": "{{ site.url }}/kzFontGallery{{ font.path }}"
   }{% if forloop.last == false %},{% endif %}
 {% endfor %}]
